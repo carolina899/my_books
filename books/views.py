@@ -17,4 +17,4 @@ def detail_book(request, book_id):
     
     book = get_object_or_404(Book, id=book_id)
     
-    return render(request, 'books/detail_book.html', {'detail_book': book})
+    return render(request, 'books/detail.html', {'book': book})
